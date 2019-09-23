@@ -82,16 +82,32 @@
           и толпится там</p>
         </li>
       </ol>
-      <p>Заинтересовались?</p>
-      <p>Укажите предполагаемые даты поездки,
-        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <section>
-        <h2>Поиск гостиницы</h2>
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h3 class="visually-hidden">Поиск гостиницы</h3>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="date-check-in-field">Дата заезда</label>
+            <input type="date" name="date-check-in" id="date-check-in-field">
+          </p>
+          <p>
+            <label for="date-check-out-field">Дата выезда</label>
+            <input type="date" name="date-check-out" id="date-check-out-field">
+          </p>
+          <p>
+            <label for="adult-field">Взрослые</label>
+            <input type="number" name="adult" value="2" id="adult-field">
+            <label for="children-field">Дети</label>
+            <input type="number" name="children" value="0" id="children-field">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
       <div>
-        <img src="img/map.jpg" width="1200" height="474">
+        <img src="img/map.png" width="1200" height="474">
       </div>
     </main>
     <footer>
@@ -99,9 +115,9 @@
         <a href="#">#visitsedona</a>
       </p>
       <div>
-        <a href="#">Твиттер</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">YouTube</a>
+        <a href="#" aria-label="Седона в Твиттере"></a>
+        <a href="#" aria-label="Седона в Фейсбуке"></a>
+        <a href="#" aria-label="Седона на Ютубе"></a>
       </div>
       <p>
         Website by
