@@ -32,10 +32,59 @@
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <section>
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <input type="checkbox" name="pool" id="pool-field" checked>
+            <label for="pool-field">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking-field">
+            <label for="parking-field">Парковка</label>
+            <input type="checkbox" name="wifi" id="wifi-field">
+            <label for="wifi-field">Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <input type="checkbox" name="hotel" id="hotel-field" checked>
+            <label for="hotel-field">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel-field" checked>
+            <label for="motel-field">Мотель</label>
+            <input type="checkbox" name="apartment" id="apartment-field" checked>
+            <label for="apartment-field">Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <p>
+              <label>от<input type="text" name="cost-from" placeholder="0"></label>
+              <label>до<input type="text" name="cost-to" placeholder="3000"></label>
+            </p>
+            <div class="scale">
+              <div class="scale-bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <section>
         <h2 class="visually-hidden">Каталог гостиниц Седоны</h2>
+        <div>
+          <p>Найдено: 3</p>
+          <p>Сортировка:</p>
+          <ul>
+            <li>
+              <a href="#">по цене</a>
+            </li>
+            <li>
+              <a href="#">по типу</a>
+            </li>
+            <li>
+              <a href="#">по рейтингу</a>
+            </li>
+          </ul>
+          <a href="#">От меньшего к большему</a>
+          <a href="#">От большего к меньшему</a>
+        </div>
         <ul>
           <li>
             <h3>Amara Resort & Spa</h3>
@@ -47,6 +96,13 @@
             <div>
               <a href="#">Подробнее</a>
               <a href="#">Забронировать</a>
+            </div>
+            <div>
+              <span class="visually-hidden">4 звезды</span>
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
             </div>
             <div>
               <p>Рейтинг: 8,5</p>
@@ -64,6 +120,12 @@
               <a href="#">Забронировать</a>
             </div>
             <div>
+              <span class="visually-hidden">3 звезды</span>
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+            </div>
+            <div>
               <p>Рейтинг: 8,9</p>
             </div>
           </li>
@@ -77,6 +139,11 @@
             <div>
               <a href="#">Подробнее</a>
               <a href="#">Забронировать</a>
+            </div>
+            <div>
+              <span class="visually-hidden">3 звезды</span>
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="Звезда" width="18" height="17">
             </div>
             <div>
               <p>Рейтинг: 9,2</p>
