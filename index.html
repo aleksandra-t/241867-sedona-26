@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -10,7 +13,7 @@
         <img src="img/logo.svg" width="140" height="72" alt="Логотип Седоны">
       </div>
       <nav>
-        <ul>
+        <ul class="main-navigation">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -27,14 +30,14 @@
       </nav>
     </header>
     <main>
-      <div>
+      <div class="promo-block">
         <img src="img/welcome.svg" width="459" height="353" alt="Надпись: WELCOME to the
         gorgeous SEDONA Because the Grand Canyon sucks!">
       </div>
-      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="page-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      <ol>
-        <li>
+      <ol class="reasons">
+        <li class="reasons-item">
           <h2>Настоящий городок</h2>
           <span>№1</span>
           <p>Седона - не аттракцион для туристов,
@@ -57,41 +60,40 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="reasons-item">
           <h2>Там есть мост дьявола</h2>
           <span>№2</span>
           <p>Да, по нему можно пройти! Если конечно
           вы осмелитесь</p>
         </li>
-        <li>
+        <li class="reasons-item bg-grey">
           <h2>Небольшая площадь</h2>
           <span>№3</span>
           <p>Все достопримечательности
           находятся очень близко</p>
         </li>
-        <li>
+        <li class="reasons-item bg-grey">
           <h2>Красивая дорога</h2>
           <span>№4</span>
           <p>Ехать в Седону из Лас-Вегаса совсем
           не скучно!</p>
         </li>
-        <li>
+        <li class="reasons-item bg-grey">
           <h2>Мало туристов</h2>
           <span>№5</span>
           <p>Большинство едет в Гранд Каньон
           и толпится там</p>
         </li>
       </ol>
-      <section>
+      <section class="choose-hotel">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h3 class="visually-hidden">Поиск гостиницы</h3>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <a type="button" href="#">Поиск гостиницы в Седоне</a>
+        <form action="https://echo.htmlacademy.ru" method="get" class="choose-hotel-form">
           <p>
             <label for="date-check-in-field">Дата заезда</label>
-            <input type="date" name="date-check-in" id="date-check-in-field">
+            <input type="date" name="date-check-in" id="date-check-in-field" value="24 апреля 2017">
           </p>
           <p>
             <label for="date-check-out-field">Дата выезда</label>
@@ -107,17 +109,17 @@
         </form>
       </section>
       <div>
-        <img src="img/map.png" width="1200" height="474">
+        <img src="img/map.png" width="1200" height="590">
       </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <p>
-        <a href="#">#visitsedona</a>
+        <a href="#" class="footer-hashtag">#visitsedona</a>
       </p>
       <div>
-        <a href="#" aria-label="Седона в Твиттере"></a>
-        <a href="#" aria-label="Седона в Фейсбуке"></a>
-        <a href="#" aria-label="Седона на Ютубе"></a>
+        <a href="#" aria-label="Седона в Твиттере" class="social inst"></a>
+        <a href="#" aria-label="Седона в Фейсбуке" class="social fb"></a>
+        <a href="#" aria-label="Седона на Ютубе" class="social youtube"></a>
       </div>
       <p>
         Website by
